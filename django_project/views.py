@@ -5,9 +5,9 @@ import requests
 def home(request):
 
     # USING APIS
-    response = requests.get('https://api.github.com/events')
+    response = requests.get('https://uselessfacts.jsph.pl/api/v2/facts/random?language=en')
     data = response.json()
-    results = data[0]["id"] 
+    results = data["text"] 
 
     response2 = requests.get('https://www.boredapi.com/api/activity')
     data2 = response2.json()

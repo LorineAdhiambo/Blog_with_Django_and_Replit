@@ -6,9 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unique Blogs</title>
-    <!-- Link to your CSS stylesheet -->
+    <!--  CSS stylesheet -->
     <link rel="stylesheet" href="{% static 'style.css' %}">
-    <script src="script.js" defer></script>
+  <!-- <script src="{% static 'script.js' %}" defer></script> -->
 </head>
 <body>
     <!-- Header Section -->
@@ -20,7 +20,7 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
+                <!-- <li><a href="#Home">Home</a></li> -->
                 <li><a href="#blog">Blog</a></li>
                 
             </ul>
@@ -30,19 +30,57 @@
             <button type="submit">Search</button>
         </div>
     </header>
+  
 
     <!-- Hero Section -->
     <section class="hero">
         <div class="background-image">
-            <!-- Background image here -->
+            
         </div>
         <div class="hero-content">
             <h1>Welcome to our Blog App</h1>
+          
+        <div class = "card"> 
+            <p>Welcome to our vibrant digital hub, where <strong>innovation</strong> meets <strong>creativity</strong>! Step into a world powered by the magic of <em>random APIs</em>, where every click unveils a new adventure. Whether you're here to <em>explore</em>, <em>discover</em>, or simply indulge your <em>curiosity</em>, you're in for a treat.</p>
+
+            <p>At our digital oasis, we've curated an eclectic blend of APIs to <em>surprise</em> and <em>delight</em> you at every turn. From <em>weather forecasts</em> to <em>cat facts</em>, <em>inspirational quotes</em> to <em>random jokes</em>, the possibilities are endless. Embrace the <strong>serendipity</strong> of our virtual playground and let the <strong>randomness</strong> guide you on an unforgettable journey.</p>
+
+            <p>Join us as we harness the power of randomness to <em>spark imagination</em>, <em>fuel discovery</em>, and <em>foster connection</em>. Whether you're a seasoned explorer or a curious newcomer, there's something here for everyone. So, dive in, explore fearlessly, and let the magic of <em>random APIs</em> ignite your imagination!</p>
+        <div/>
+          <br>
             <p>Explore the Latest Blog Posts </p>
-            <a href="https://www.quora.com/What-are-some-blogs-that-programmers-should-follow" class="cta-button">Explore Now</a>
+            <a href="https://www.quora.com/What-are-some-blogs-that-programmers-should-follow" class="cta-button" target="_blank">Explore Now</a>
         </div>
     </section>
 
+          
+          <!-- featured posts -->
+                
+     </section>
+          <div class="card">
+            
+            <h1>Random Useless Facts</h1>
+            
+            <p>{{results}}</p>
+            
+          </div>
+          
+          <div class="card">
+            
+            <h1>Are you bored?</h1>
+            
+            <p>{{results2}}</p>
+            
+          </div>
+          
+          <div class="card">
+            
+            <h1>Dog Breeds</h1>
+            
+            
+            <img src = "{{results3}}" alt = "color">
+              </div>
+          <br/>
     <!-- Blog Section -->
     <section id="blog" class="blog">
         <h2>Featured Blog Posts</h2>
@@ -61,42 +99,17 @@
               <p>If you want to start a freelance copywriting business, or scale your existing business with killer copy, you are in the right place!</p>
                 <a href="https://www.webfx.com/blog/web-design/open-source-blogging-platforms-for-developers/">Read More</a>
             </div>
-            <!-- Add more featured posts here -->
         </div>
-    </section>
-
-    <div class="card">
-        <h1>Random Events</h1>
-
-        <p>{{results}}</p>
-      
-    </div>
-  
-
-  <div class="card">
-      <h1>Are you bored?</h1>
-
-      <p>{{results2}}</p>
-
-
-  </div>
-  <div class="card">
-    <h1>Dog Breeds</h1>
-
-    <img src = "{{results3}}" alt = "color"
-
-  </div>
-
     <!-- Footer Section -->
     <footer>
         <div class="social-media">
-            <!-- Add your social media links here -->
-            <a href="#">Twitter</a> <br/>
-            <a href="#">Facebook</a> <br/>
-            <a href="#">Instagram</a>
+            
+            <a href="https://twitter.com/LorineAdhi67002" target="_blank">Twitter</a> <br/>
+            <a href="https://www.facebook.com/profile.php?id=100076430113161" target="_blank">Facebook</a> <br/>
+            <a href="https://www.instagram.com/blame_c5/" target="_blank">Instagram</a>
         </div>
         <div class="contact-info">
-            <!-- Add your contact information here -->
+            <!-- Contact information  -->
             <p>Email: lorineabdul@gmail.com</p>
         </div>
         <div class="copyright">

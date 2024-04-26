@@ -1,4 +1,4 @@
-/* Reset default margin and padding */
+/*  margin and padding */
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #a4ccea;
     color: #333;
 }
 
@@ -72,8 +72,8 @@ nav ul li a {
 .hero {
     padding: 2rem;
     text-align: center;
-    background-color: #007bff;
-    color: #fff;
+    background-color: #020509;
+    color: #080707;
 }
 
 .hero h1 {
@@ -146,17 +146,37 @@ nav ul li a {
     text-decoration: none;
 }
 
+.card {
+    width: 100%;
+    height: auto;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(129, 9, 9, 0.1);
+    padding: 20px;
+    margin: 20px;
+}
+.card h1 {
+    margin-top: 0;
+}
+.card p {
+    margin-bottom: 0;
+}
+
 /* Footer section styles */
 footer {
     background-color: #333;
     color: #fff;
     padding: 2rem;
+    text-align: center;
+    width: auto;
+    height: auto;
 }
 
 .social-media a {
     color: #fff;
     text-decoration: none;
     margin-right: 10px;
+  
 }
 
 .social-media a:hover {
