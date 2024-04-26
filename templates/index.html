@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,13 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unique Blogs</title>
     <!-- Link to your CSS stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <!-- Header Section -->
     <header>
-        <div class="logo">Logo
-          <img src="logo.jpg" alt= "logo" width 50px height 50px>
+        <div class="logo">
+          <img src="{% static 'media/logo.jpg' %}" alt="Logo" width = 180px , height = 90%>
+
+
         </div>
         <nav>
             <ul>
@@ -34,7 +39,7 @@
         <div class="hero-content">
             <h1>Welcome to our Blog App</h1>
             <p>Explore the Latest Blog Posts </p>
-            <a href="https://unsplash.com" class="cta-button">Explore Now</a>
+            <a href="https://www.quora.com/What-are-some-blogs-that-programmers-should-follow" class="cta-button">Explore Now</a>
         </div>
     </section>
 
@@ -43,18 +48,18 @@
         <h2>Featured Blog Posts</h2>
         <div class="featured-posts">
             <div class="post">
-                <img src="beach.jpg" alt="Beach">
+              <img src="{% static 'media/beach.jpg' %}" alt="beach">
                 <h3>Coastline</h3>
                 <p>It's hot and sunny, so the beach is full, then the rain comes and it empties quickly. Some beaches have a promenade behind them and some are at the bottom of the cliff. Some have seas that you wouldn't swim in because you'd be swept away and other because the sharks live there. That's the beauty of the beach...</p>
 
-              <img src="codeimg.jpg" alt="code">
+              <img src="{% static 'media/codeimg.jpg' %}" alt="code snippet">
               <h3>Code snippet</h3>
-              <p></p>
+              <p>Code snippets are small, reusable pieces of code that can be easily inserted into a program or project. They are usually created to perform a specific task or function. By reusing the code that other developers have already written and tested, developers are able to save time and effort.</p>
 
-              <img src="" alt="">
-              <h3>Post Title 1</h3>
-              <p>Description of post 1</p>
-                <a href="#read-more">Read More</a>
+              <img src="{% static 'media/tech.jpg' %}" alt="At work">
+              <h3>Freelancing</h3>
+              <p>If you want to start a freelance copywriting business, or scale your existing business with killer copy, you are in the right place!</p>
+                <a href="https://www.webfx.com/blog/web-design/open-source-blogging-platforms-for-developers/">Read More</a>
             </div>
             <!-- Add more featured posts here -->
         </div>
