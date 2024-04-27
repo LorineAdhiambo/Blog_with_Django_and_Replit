@@ -7,10 +7,26 @@
 
 /* Global styles */
 body {
+    text-align: centre;
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #a4ccea;
     color: #333;
+}
+input, button{
+  padding: .4rem 2rem;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  margin-bottom: 1rem;
+  
+}
+button{
+  padding: .4rem .7rem;
+  background color: #fff;
+  color: #5c33f6;
+  cursor: pointer;
+  
+  
 }
 
 /* Header styles */
@@ -43,36 +59,13 @@ nav ul li a {
     color: #333;
 }
 
-.search-bar {
-    display: flex;
-    align-items: center;
-}
 
-.search-bar input[type="text"] {
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-right: 0.5rem;
-}
-
-.search-bar button {
-    padding: 0.5rem 1rem;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.search-bar button:hover {
-    background-color: #0056b3;
-}
 
 /* Hero section styles */
 .hero {
     padding: 2rem;
     text-align: center;
-    background-color: #020509;
+    background-color: #3f8ff8;
     color: #080707;
 }
 

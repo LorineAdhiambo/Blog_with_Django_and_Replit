@@ -16,10 +16,18 @@ def home(request):
     response3 = requests.get('https://dog.ceo/api/breeds/image/random')
     data3 = response3.json()
     results3 = data3["message"]
+  
+    if request.method == 'POST':
+        photo = request.POST.get('photo')
+    else:
+        photo = None
    
 
     return render(request, 'templates/index.html', {
         'results': results,
         'results2': results2,
-        'results3': results3
+        'results3': results3,
+        'photo': photo
     })
+
+
